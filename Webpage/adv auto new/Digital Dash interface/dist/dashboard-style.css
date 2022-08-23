@@ -1,0 +1,503 @@
+body{
+    background-color: black;
+   
+    font-family: 'Roboto', sans-serif;
+}
+#mainwrapper{
+    margin-top: 700px;
+}
+#border{
+    /*border: 2px solid white;*/
+    
+}
+#svg-1-PED, #svg-2-PED, #svg-3-PED{
+    color: white;
+}
+#accelaration img, #braking img{
+    border: 2px solid gray;
+    width: 100px;
+    height: 170px;
+}
+#gridforthrottle{
+    display: grid;
+    grid-template-rows: minmax(30px, 1fr);
+    grid-template-columns: minmax(50px, 1fr) minmax(50px, 1fr);
+    /*padding: 20px;*/
+    grid-gap:30px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding-top: 10px;
+}
+#acceleration{
+    grid-area: 1/1/2/2;
+    
+}
+#braking{
+    grid-area: 1/2/2/3;
+    
+}
+#steerimg{
+    margin-left:  -2px;
+    width: 1300px;
+    height: 903.89px;
+}
+#add, #sub{
+    float: left;
+}
+#add img, #sub img{
+    width: 120px;
+    margin-right:35px;
+    height: 140px;
+    cursor: pointer;
+  outline: none;
+  color: #fff;
+   border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(75, 72, 72); 
+    
+}
+
+
+#add img:active {
+  
+  box-shadow: 0 5px rgb(53, 51, 51);
+  transform: translateY(6px);
+}
+#sub img:active {
+  
+    box-shadow: 0 5px rgb(53, 51, 51);
+    transform: translateY(6px);
+  }
+#rpmmeter{
+    position: absolute;
+    top: 20px;
+    left: 400px;
+
+  }
+#rpmmeter img{
+    width: 120px;
+    margin-right:35px;
+    height: 120px;
+    cursor: pointer;
+  outline: none;
+  color: #fff;
+   border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(75, 72, 72); 
+}
+#rpmmeter img:active {
+  
+    box-shadow: 0 5px rgb(53, 51, 51);
+    transform: translateY(6px);
+  }
+
+
+#clear{
+    clear: both;
+}
+
+
+
+.backgroundRed{
+    background: red;
+}
+
+.backgroundblack{
+
+background: #000000;
+}
+
+
+
+#geart{
+    padding-top: 10px;
+    color: white;
+    padding-left: 20px;
+}
+
+
+
+#screenstart{
+    position: absolute;
+    margin-left: 408px;
+    margin-right: auto;
+    top: 335px;
+    height: 320px;
+    
+    
+}
+@keyframes fadeLoad {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  
+  
+
+
+/*GRID CONTAINER*/
+.container{
+    /*border: 2px solid pink;*/
+    /* background-color: black; */
+    display: grid;
+    width: 500px;
+    height: 150px;
+    margin-left: 400px;
+    margin-right: auto;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-rows: minmax(46px, 50px) minmax(46px, 50px) minmax(46px, 50px) minmax(46px, 50px) minmax(46px, 50px) minmax(46px, 50px);
+    grid-template-columns: minmax(55px, 0.5fr) minmax(55px, 0.5fr) minmax(55px, 0.5fr) minmax(55px, 0.5fr) minmax(60px, 0.5fr) minmax(60px, 0.5fr);
+    grid-gap: 3px;
+    padding: 7px;
+    /*padding-top: 50px;*/
+    grid-template-areas: 
+        "a b c d"
+        "e f g h"
+        " i j k l"
+        "m n o p";
+    opacity: 0.0;
+    position: absolute;
+    top: 340px;
+    }
+
+/*GRID ITEMS*/
+.container > div{
+    /*background-color:black;*/
+    color: aliceblue;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+.divclass{
+    background-color: black;
+}
+#consolegrid{
+    
+    display: grid;
+    width: 440px;
+    height: 150px;
+    margin-left: 407px;
+    margin-right: auto;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-rows: minmax(46px, 50px) minmax(46px, 50px) minmax(46px, 50px) minmax(46px, 50px) minmax(46px, 50px);
+    grid-template-columns: minmax(35px, 60px) minmax(35px, 60px);
+    grid-gap: 100px;
+    
+    padding: 7px;
+}
+#absswitch img,#fanswitch img,#fuelswitch img,#holdswitch img,#lighttoggle img,#mains img,#rains img,#tract img,#tyres img{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+  outline: none;
+  color: #fff;
+   border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(75, 72, 72); 
+
+}
+#absswitch img:active,#fanswitch img:active,#fuelswitch img:active,#holdswitch img:active,#lighttoggle img:active,#mains img:active,#rains img:active,#tract img:active,#tyres img:active{
+    box-shadow: 0 5px rgb(53, 51, 51);
+    transform: translateY(6px);
+
+}
+
+#consolegrid div img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+#consolegrid div{
+    margin-bottom: 59px;
+    /* margin: 0px -100px; */
+}
+#absswitch{
+    grid-area: 1/2/2/3;
+}
+#fanswitch{
+    grid-area: 3/1/4/2;
+}
+#fuelswitch{
+    grid-area: 2/2/3/3;
+}
+#holdswitch{
+    grid-area: 2/1/3/2;
+}
+#lighttoggle{
+    grid-area: 3/2/4/3;
+}
+#mains{
+    grid-area: 1/1/2/2;
+}
+#rains{
+    grid-area: 4/1/5/2;
+}
+#tract{
+    grid-area: 4/2/5/3;
+}
+#tyres{
+    grid-area: 5/1/6/2;
+}
+
+#engine{
+/*
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+*/
+    grid-area: 1/1/3/3;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+#engine-grid{
+    display: grid;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-gap: 2px;*/
+    font-size: 10px !important;
+    /*padding: 7px;*/
+}
+
+#svg-1-PED, #svg-2-PED, #svg-3-PED{
+    color: white;
+}
+
+#ped-inputs{
+    margin-bottom: 50px;
+}
+
+#acc{
+    color: white;
+    padding-left: 20px;
+}
+#console{
+    position: absolute;
+    top: 150px;
+    left: -400px;
+}
+#number78{
+    grid-area: 1/1/2/2;
+    /* padding-top: 5px; */
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    font-size: 25px;
+}
+#number90{
+    grid-area: 2/1/3/2;
+    border-right: 2px solid white;
+    font-size: 25px;
+}
+#buttons{
+    grid-area: 1/2/3/3;
+    /*border: 4px solid white;*/
+}
+#fuel-grid{
+    display: grid;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 20px !important;
+    /*grid-gap: 2px;*/
+    /*padding: 7px;*/
+}
+#ped{
+    position: relative;
+}
+#compress-svg{
+    position: absolute;
+    left: 0px;
+    width:27px;
+    
+}
+#compress-svg-2{
+    position: absolute;
+    left: 20px;
+    width:27px;
+    
+}
+#compress-svg-3{
+    position: absolute;
+    left:40px;
+    width:27px;
+}
+#tank{
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    grid-area: 1/1/2/2;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    font-size: 8px;
+}
+
+#prev-lap{
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    grid-area: 1/2/2/3;
+    border-bottom: 2px solid white;
+    font-size: 8px;
+}
+#prev-lap div{
+    color: #F00AF0;
+    font-size: 18px;
+}
+#rem{
+    /* padding-top: 10px; */
+    grid-area: 2/1/3/2;
+    border-right: 2px solid white;
+    font-size: 8px;
+}
+#rem div{
+    color: #0AF712;
+    font-size: 18px;
+}
+#fuel-laps{
+    /* padding-top: 10px; */
+    grid-area: 2/2/3/3;
+    font-size: 8px;
+    /*border-right: 2px solid white;*/
+}
+#fuel-laps div{
+    color: #ECEC29;
+    font-size: 18px;
+}
+#quantity{
+    
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+#time-grid{
+    display: grid;
+    grid-template-rows: repeat(4, 50px);
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 10px;
+}
+#delta{
+    font-size: 15px;
+    font-weight: normal;
+    /*float: left;*/
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+}
+#row1{
+    padding-top: 15px;
+    font-size: 15px;
+    color: red;
+}
+#row3{
+    color: #ECEC29;
+    
+}
+#row4{
+    color: #0AF712;
+}
+#row1, #row2, #row3{
+    border-bottom: 2px solid white;
+    
+}
+#row1, #row2, #row3, #row4{
+    padding-top: 5px;
+    /*padding-bottom: 5px;*/
+    font-size: 15px;
+    font-weight: 500px;
+}
+#row1{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+#gear{
+/*    grid-area: 1/3/4/5;*/
+    grid-area: 1/3/4/4;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+#gear-text{
+    
+    font-weight: bold;
+    color: white;
+    opacity: 0.85;
+    font-size: 80px;
+}
+#speed-text{
+    font-size: 14px;
+    
+}
+#time{
+    
+    /*SPAN ROWS THEN COLUMNS*/
+    /*grid-area: 3/1/span 2/span 2;*/
+    grid-area: 1/4/5/6;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 10px;
+}
+ #abs-text, #tc1-text, #tc2-text, #tps-text, #map-text{
+    color: white;
+    font-size: 20px;
+}
+#bb-text{
+    color: white;
+    font-size: 10px;
+}
+
+#ped{
+    grid-area: 1/6/5/7;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+#fuel{
+    grid-area: 3/1/5/3;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+#speed{
+    border: 2px solid white;
+    border-radius: 7px;
+}
+#brake-bias{
+    border: 2px solid #ECEC29;
+    border-radius: 7px;
+    font-size: 10px;
+}
+#abs{
+    border: 2px solid #ECEC29;
+    border-radius: 7px;
+    font-size: 10px;
+}
+#tc1{
+    border: 2px solid #0AF712;
+    border-radius: 7px;
+    font-size: 10px;
+}
+#tc2{
+    border: 2px solid #0AF712;
+    border-radius: 7px;
+    font-size: 10px;
+}
+#tps{
+    border: 2px solid #1472D5;
+    border-radius: 7px;
+    font-size: 10px;
+}
+#map{
+    border: 2px solid #F00AF0;
+    border-radius: 7px;
+    font-size: 10px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+<title>Send Mail</title> 
+<script src= 
+    "https://smtpjs.com/v3/smtp.js"> 
+</script> 
+
+</head> 
+
+<body> 
+<form method="post"> 
+    <input type="button" value="Send OTP"
+        onclick="sendOTP()" placeholder="Type your OTP.." /> 
+</form> 
+<input type="text" name="otp" placeholder="Enter OTP.." id="otpnum">
+<br>
+<button onclick="new1();">GENERATE OTP</button>
+</body> 
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</html>
+ 

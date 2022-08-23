@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    background:#E9EAED;
+}
+/*Login and SignUp Page*/
+.container-login{
+  background: black;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+.tab{
+  padding: 15px;
+  background:  yellow;
+  color: black;
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+.tab:hover{
+    background: #1EAEDB;
+}
+.main-div input {
+  display: block;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  background: none;
+  padding: 15px;
+  outline: none;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  font-size: 20px;
+  color: white;
+}
+.main-div input:focus {
+  border: 1px solid white;
+}
+.main-div button{
+  padding: 15px;
+  transition: 0.3s;
+  margin: 20px auto;
+  width: 100%;
+  background-color: yellow;
+  font-size: 20px;
+}
+.main-div button:hover{
+  background: #fff;
+  color: black;
+  border: 1px solid #5d8ffc;
+}
+.main-div{
+  padding: 20px;
+}
+#login_div a{
+  color: white;
+  text-decoration: none;
+}
+#login_div img{
+  margin: 20px 200px;
+}
+h4{
+  text-decoration: underline;
+}
+@media(max-width: 599px) and (min-width: 500px){
+  .container-login{
+    max-width: 400px;
+  }
+  #login_div img{
+    margin: 20px 150px;
+  }
+}
+@media(max-width: 499px){
+  .container-login{
+    max-width: 300px;
+  }
+  #login_div img{
+    margin: 20px 100px;
+  }
+}
+

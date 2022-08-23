@@ -1,0 +1,14 @@
+<script>
+function myFunc ()
+{
+setTimeout(function() {
+var tt = Math.random() * (100 - 1) + 1;
+var t = tt.toFixed(3);
+console.info(t);
+document.getElementById("random_number").innerHTML = t;
+myFunc();
+}, 500);
+}
+
+myFunc();
+</script>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="1.7325581395348846 105.3139414232831 638.0930232558143 44" width="634.09" height="40">
+<defs>
+
+<path d="M2.73 106.31L636.83 106.31L636.83 146.31L2.73 146.31L2.73 106.31Z" id="back"></path>
+
+<path d="M10.74 112.97L21.61 112.97L21.61 139.66L10.74 139.66L10.74 112.97Z" id="l1"></path>
+
+<path d="M28.65 112.97L39.52 112.97L39.52 139.66L28.65 139.66L28.65 112.97Z" id="l2"></path>
+
+<path d="M46.56 112.97L57.43 112.97L57.43 139.66L46.56 139.66L46.56 112.97Z" id="l3"></path>
+
+<path d="M64.35 112.97L75.22 112.97L75.22 139.66L64.35 139.66L64.35 112.97Z" id="l4"></path>
+
+<path d="M82.25 112.97L93.12 112.97L93.12 139.66L82.25 139.66L82.25 112.97Z" id="l5"></path>
+
+<path d="M100.16 112.97L111.03 112.97L111.03 139.66L100.16 139.66L100.16 112.97Z" id="l6"></path>
+
+<path d="M117.72 112.97L128.59 112.97L128.59 139.66L117.72 139.66L117.72 112.97Z" id="l7"></path>
+
+<path d="M135.62 112.97L146.5 112.97L146.5 139.66L135.62 139.66L135.62 112.97Z" id="l8"></path>
+
+<path d="M153.53 112.97L164.4 112.97L164.4 139.66L153.53 139.66L153.53 112.97Z" id="l9"></path>
+
+<path d="M171.32 112.97L182.19 112.97L182.19 139.66L171.32 139.66L171.32 112.97Z" id="l10"></path>
+
+<path d="M189.23 112.97L200.1 112.97L200.1 139.66L189.23 139.66L189.23 112.97Z" id="l11"></path>
+
+<path d="M207.14 112.97L218.01 112.97L218.01 139.66L207.14 139.66L207.14 112.97Z" id="l12"></path>
+
+<path d="M224.58 112.97L235.45 112.97L235.45 139.66L224.58 139.66L224.58 112.97Z" id="l13"></path>
+
+<path d="M242.49 112.97L253.36 112.97L253.36 139.66L242.49 139.66L242.49 112.97Z" id="l14"></path>
+
+<path d="M260.39 112.97L271.26 112.97L271.26 139.66L260.39 139.66L260.39 112.97Z" id="l15"></path>
+
+<path d="M278.18 112.97L289.06 112.97L289.06 139.66L278.18 139.66L278.18 112.97Z" id="l16"></path>
+
+<path d="M296.09 112.97L306.96 112.97L306.96 139.66L296.09 139.66L296.09 112.97Z" id="l17"></path>
+
+<path d="M314 112.97L324.87 112.97L324.87 139.66L314 139.66L314 112.97Z" id="l18"></path>
+
+<path d="M331.44 112.97L342.31 112.97L342.31 139.66L331.44 139.66L331.44 112.97Z" id="l19"></path>
+
+<path d="M349.35 112.97L360.22 112.97L360.22 139.66L349.35 139.66L349.35 112.97Z" id="l20"></path>
+
+<path d="M367.25 112.97L378.12 112.97L378.12 139.66L367.25 139.66L367.25 112.97Z" id="l21"></path>
+
+<path d="M385.04 112.97L395.92 112.97L395.92 139.66L385.04 139.66L385.04 112.97Z" id="l22"></path>
+
+<path d="M402.95 112.97L413.82 112.97L413.82 139.66L402.95 139.66L402.95 112.97Z" id="l23"></path>
+
+<path d="M420.86 112.97L431.73 112.97L431.73 139.66L420.86 139.66L420.86 112.97Z" id="l24"></path>
+
+<path d="M439.29 112.97L450.16 112.97L450.16 139.66L439.29 139.66L439.29 112.97Z" id="l25"></path>
+
+<path d="M457.19 112.97L468.07 112.97L468.07 139.66L457.19 139.66L457.19 112.97Z" id="l26"></path>
+
+<path d="M475.1 112.97L485.97 112.97L485.97 139.66L475.1 139.66L475.1 112.97Z" id="l27"></path>
+
+<path d="M492.89 112.97L503.76 112.97L503.76 139.66L492.89 139.66L492.89 112.97Z" id="l28"></path>
+
+<path d="M510.8 112.97L521.67 112.97L521.67 139.66L510.8 139.66L510.8 112.97Z" id="l29"></path>
+
+<path d="M528.71 112.97L539.58 112.97L539.58 139.66L528.71 139.66L528.71 112.97Z" id="l30"></path>
+
+<path d="M546.88 112.97L557.75 112.97L557.75 139.66L546.88 139.66L546.88 112.97Z" id="l31"></path>
+
+<path d="M564.78 112.97L575.65 112.97L575.65 139.66L564.78 139.66L564.78 112.97Z" id="l32"></path>
+
+<path d="M582.57 112.97L593.44 112.97L593.44 139.66L582.57 139.66L582.57 112.97Z" id="l33"></path>
+
+<path d="M600.48 112.97L611.35 112.97L611.35 139.66L600.48 139.66L600.48 112.97Z" id="l34"></path>
+
+<path d="M618.39 112.97L629.26 112.97L629.26 139.66L618.39 139.66L618.39 112.97Z" id="l35"></path>
+
+</defs>
+
+<g><g><use xlink:href="#back" opacity="1" fill="#000000" fill-opacity="1"></use><g><use xlink:href="#back" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="0" stroke-opacity="1"></use></g></g><g><use xlink:href="#l1" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l1" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l2" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l2" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l3" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l3" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l4" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l4" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l5" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l5" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l6" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l6" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l7" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l7" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l8" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l8" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l9" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l9" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l10" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l10" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l11" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l11" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l12" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l12" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l13" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l13" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l14" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l14" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l15" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l15" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l16" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l16" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l17" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l17" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l18" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l18" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l19" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l19" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l20" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l20" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l21" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l21" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l22" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l22" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l23" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l23" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l24" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l24" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l25" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l25" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l26" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l26" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l27" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l27" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l28" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l28" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l29" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l29" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l30" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l30" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l31" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l31" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l32" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l32" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l33" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l33" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l34" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l34" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g><g><use xlink:href="#l35" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l35" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="2" stroke-opacity="1"></use></g></g></g></svg>

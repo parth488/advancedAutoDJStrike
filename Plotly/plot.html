@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="navbar"><span>Real-Time Chart with Plotly.js</span></div>
+<div class="wrapper">
+<div id="chart"></div>
+<div id="heat"></div>
+<script>
+function getData() {
+return Math.random();
+}
+var trace1 = {
+  x: [0, 1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+  y: [7,4,2,3,9,12,23,24,5,1,8,9,8,7,6,5,4,3,2,3,4,5,6,7,8,9,10,14,18],
+  mode: 'lines',
+  line: {
+    color: 'rgb(0, 0, 255)',
+    width: 2.5},
+  type: 'scatter'
+};
+
+var trace2 = {
+    x: [0, 1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+  y: [2,4,5,6,12,3,4,18,12,2,8,9,5,4,2,6,9,0,4,5,6,3,4,5,6,8,12,14,24],
+  mode: 'lines',
+  line: {
+    color: 'rgb(255, 51, 0)',
+    width: 2.5},
+  
+  type: 'scatter'
+};
+
+var data = [trace1, trace2];
+var layout1 = {
+  title: 'Speed VS rpm '
+};
+Plotly.newPlot('chart', data, layout1);
+
+var data1 = [ {
+  z: [[10, 10.625, 12.5, 15.625, 20],
+       [5.625, 14.6, 8.125, 11.25, 15.625],
+       [2.5, 3.125, 5., 8.125, 12.5],
+       [0.625, 1.25, 3.125, 6.25, 10.625],
+       [0, 0.625, 2.5, 5.625, 20],
+       [2, 8.625, 4.5, 8.625, 10]],
+  type: 'contour',
+  colorscale: 'Hot'
+}
+];
+
+var layout = {
+  title: 'Engine temperature/Humidity map'
+};
+
+Plotly.newPlot('heat', data1, layout);
+// Plotly.plot('chart',[{
+// y:[getData()],
+// type:'line'
+// }]);
+// var cnt = 0;
+// setInterval(function(){
+// Plotly.extendTraces('chart',{ y:[[getData()]]}, [0]);
+// cnt++;
+// if(cnt > 100) {
+// Plotly.relayout('chart',{
+// xaxis: {
+// range: [cnt-100,cnt]
+// }
+// });
+// }
+// },100);
+</script>
+</div>
+</body>
+</html>

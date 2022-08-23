@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Advanced Auto : Racing Experience</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+        <script>
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+  apiKey: "AIzaSyBC7IQnZ6eIkw57YKH8XGKIJ-UwLeuRD44",
+  authDomain: "advanced-auto-7de27.firebaseapp.com",
+  databaseURL: "https://advanced-auto-7de27.firebaseio.com",
+  projectId: "advanced-auto-7de27",
+  storageBucket: "advanced-auto-7de27.appspot.com",
+  messagingSenderId: "684885116976",
+  appId: "1:684885116976:web:82a1d4b31780e6e5c005f5",
+  measurementId: "G-5VBHGYEYR3"
+};
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        //   firebase.analytics();
+        </script>
+         <script src="main.js"></script>
+        
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css" >
+    <link rel="stylesheet"  href="style1.css" >
+    <link rel="stylesheet"  href="style2.css" >
+    <link rel="stylesheet"  href="style3.css" >
+    <link rel="stylesheet" type="text/css" href="dashboard-style.css">
+    </head>
+    <body onload="startTime()">
+
+        
+        <p id="geart">Gear:</p>
+        
+       <div id="sub" >
+            <img src="paddledown.png" onclick="myEnterFunction2()"> 
+        </div>
+        <div id="add" >
+            <img src="paddleup.png" onclick="myEnterFunction()">
+           </div>
+    <div id="clear"></div>
+
+    <div id="gridforthrottle">
+        <div id="accelaration" onmouseenter="incrementgear()" onmousemove="increasespeed()"> <img src="accelarator.png"></div>
+        <div id="braking" onmouseenter="decrementgear()" onmousemove="decreasespeed()"> <img src="brakepedal.png"></div>
+        
+
+    </div>
+    
+<div id="steerdiv">
+    <img id="steerimg" src="m6gt3.png">
+</div>
+    
+<div id="border">
+    <div id="main-svg">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="1.7325581395348846 105.3139414232831 638.0930232558143 44" width="634.09" height="40">
+            <defs>
+            
+            <path d="M2.73 106.31L636.83 106.31L636.83 146.31L2.73 146.31L2.73 106.31Z" id="back"></path>
+            
+            <path d="M10.74 112.97L21.61 112.97L21.61 139.66L10.74 139.66L10.74 112.97Z" id="l1"></path>
+            
+            <path d="M28.65 112.97L39.52 112.97L39.52 139.66L28.65 139.66L28.65 112.97Z" id="l2"></path>
+            
+            <path d="M46.56 112.97L57.43 112.97L57.43 139.66L46.56 139.66L46.56 112.97Z" id="l3"></path>
+            
+            <path d="M64.35 112.97L75.22 112.97L75.22 139.66L64.35 139.66L64.35 112.97Z" id="l4"></path>
+            
+            <path d="M82.25 112.97L93.12 112.97L93.12 139.66L82.25 139.66L82.25 112.97Z" id="l5"></path>
+            
+            <path d="M100.16 112.97L111.03 112.97L111.03 139.66L100.16 139.66L100.16 112.97Z" id="l6"></path>
+            
+            <path d="M117.72 112.97L128.59 112.97L128.59 139.66L117.72 139.66L117.72 112.97Z" id="l7"></path>
+            
+            <path d="M135.62 112.97L146.5 112.97L146.5 139.66L135.62 139.66L135.62 112.97Z" id="l8"></path>
+            
+            <path d="M153.53 112.97L164.4 112.97L164.4 139.66L153.53 139.66L153.53 112.97Z" id="l9"></path>
+            
+            <path d="M171.32 112.97L182.19 112.97L182.19 139.66L171.32 139.66L171.32 112.97Z" id="l10"></path>
+            
+            <path d="M189.23 112.97L200.1 112.97L200.1 139.66L189.23 139.66L189.23 112.97Z" id="l11"></path>
+            
+            <path d="M207.14 112.97L218.01 112.97L218.01 139.66L207.14 139.66L207.14 112.97Z" id="l12"></path>
+            
+            <path d="M224.58 112.97L235.45 112.97L235.45 139.66L224.58 139.66L224.58 112.97Z" id="l13"></path>
+            
+            <path d="M242.49 112.97L253.36 112.97L253.36 139.66L242.49 139.66L242.49 112.97Z" id="l14"></path>
+            
+            <path d="M260.39 112.97L271.26 112.97L271.26 139.66L260.39 139.66L260.39 112.97Z" id="l15"></path>
+            
+            <path d="M278.18 112.97L289.06 112.97L289.06 139.66L278.18 139.66L278.18 112.97Z" id="l16"></path>
+            
+            <path d="M296.09 112.97L306.96 112.97L306.96 139.66L296.09 139.66L296.09 112.97Z" id="l17"></path>
+            
+            <path d="M314 112.97L324.87 112.97L324.87 139.66L314 139.66L314 112.97Z" id="l18"></path>
+            
+            <path d="M331.44 112.97L342.31 112.97L342.31 139.66L331.44 139.66L331.44 112.97Z" id="l19"></path>
+            
+            <path d="M349.35 112.97L360.22 112.97L360.22 139.66L349.35 139.66L349.35 112.97Z" id="l20"></path>
+            
+            <path d="M367.25 112.97L378.12 112.97L378.12 139.66L367.25 139.66L367.25 112.97Z" id="l21"></path>
+            
+            <path d="M385.04 112.97L395.92 112.97L395.92 139.66L385.04 139.66L385.04 112.97Z" id="l22"></path>
+            
+            <path d="M402.95 112.97L413.82 112.97L413.82 139.66L402.95 139.66L402.95 112.97Z" id="l23"></path>
+            
+            <path d="M420.86 112.97L431.73 112.97L431.73 139.66L420.86 139.66L420.86 112.97Z" id="l24"></path>
+            
+            <path d="M439.29 112.97L450.16 112.97L450.16 139.66L439.29 139.66L439.29 112.97Z" id="l25"></path>
+            
+            <path d="M457.19 112.97L468.07 112.97L468.07 139.66L457.19 139.66L457.19 112.97Z" id="l26"></path>
+            
+            <path d="M475.1 112.97L485.97 112.97L485.97 139.66L475.1 139.66L475.1 112.97Z" id="l27"></path>
+            
+            <path d="M492.89 112.97L503.76 112.97L503.76 139.66L492.89 139.66L492.89 112.97Z" id="l28"></path>
+            
+            <path d="M510.8 112.97L521.67 112.97L521.67 139.66L510.8 139.66L510.8 112.97Z" id="l29"></path>
+            
+            <path d="M528.71 112.97L539.58 112.97L539.58 139.66L528.71 139.66L528.71 112.97Z" id="l30"></path>
+            
+            <path d="M546.88 112.97L557.75 112.97L557.75 139.66L546.88 139.66L546.88 112.97Z" id="l31"></path>
+            
+            <path d="M564.78 112.97L575.65 112.97L575.65 139.66L564.78 139.66L564.78 112.97Z" id="l32"></path>
+            
+            <path d="M582.57 112.97L593.44 112.97L593.44 139.66L582.57 139.66L582.57 112.97Z" id="l33"></path>
+            
+            <path d="M600.48 112.97L611.35 112.97L611.35 139.66L600.48 139.66L600.48 112.97Z" id="l34"></path>
+            
+            <path d="M618.39 112.97L629.26 112.97L629.26 139.66L618.39 139.66L618.39 112.97Z" id="l35"></path>
+            
+            </defs>
+            
+            <g><g><use xlink:href="#back" opacity="1" fill="#000000" fill-opacity="1"></use><g><use xlink:href="#back" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="0" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l1" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l1" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l2" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l2" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l3" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l3" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l4" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l4" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l5" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l5" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l6" opacity="1" fill="#2318fb" fill-opacity="1"></use><g><use xlink:href="#l6" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l7" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l7" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l8" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l8" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l9" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l9" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l10" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l10" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l11" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l11" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l12" opacity="1" fill="#48fb18" fill-opacity="1"></use><g><use xlink:href="#l12" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l13" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l13" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l14" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l14" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l15" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l15" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l16" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l16" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l17" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l17" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l18" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l18" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l19" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l19" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l20" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l20" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l21" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l21" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l22" opacity="1" fill="#fbee18" fill-opacity="1"></use><g><use xlink:href="#l22" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l23" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l23" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l24" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l24" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l25" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l25" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l26" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l26" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l27" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l27" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l28" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l28" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l29" opacity="1" fill="#fb9e18" fill-opacity="1"></use><g><use xlink:href="#l29" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l30" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l30" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l31" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l31" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+            
+            <g><use xlink:href="#l32" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l32" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g>
+        
+        </g><g><use xlink:href="#l33" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l33" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g>
+        
+        <g><use xlink:href="#l34" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l34" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g
+        
+        ><g><use xlink:href="#l35" opacity="1" fill="#fb1818" fill-opacity="1"></use><g><use xlink:href="#l35" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g></g></svg>
+
+        
+        </div>
+
+
+        
+        
+        <label id="svg-1-PED">PED1</label>
+        <input id="test1">
+        <label id="svg-2-PED">PED2</label>
+        <input id="test2">
+        <label id="svg-3-PED">PED3</label>
+        <input id="test3">
+        <div class="container" id="digitalgrid">
+            <div id="engine" class="divclass">Engine
+                <div id="engine-grid">
+                    <div id="number78">78 &#8451;</div>
+                    <div id="number90"></div>
+                    <div id="buttons"></div>
+                </div>
+            </div>
+            <div id="gear" class="divclass">Gear
+                <div id="gear-text">N</div></div>
+            <div id="time" class="divclass">Time
+                <div id="time-grid">
+                    <div id="row1">
+                        <div id="delta">DELTA</div>+ 27.638</div>
+                    <div id="row2">10:07 .5</div>
+                    <div id="row3"><span id="hour">00</span> :
+                        <span id="min">00</span> :
+                        <span id="sec">00</span> :
+                        <span id="milisec">00</span></div>
+                    <div id="row4"></div>
+                </div></div>
+            <div id="ped" class="divclass">PED
+
+                <div id="first-svg">
+
+                    <svg id="compress-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="135.54117195951966 35.84025982850639 39.403872752420455 165.82572614107872" width="35.4" height="161.83">
+
+                        <defs>
+                        
+                        <path d="M171.95 36.84L171.95 198.67L136.54 198.67L136.54 36.84L171.95 36.84Z" id="boostback"></path>
+                        
+                        <path d="M143.85 170.92L164.64 170.92L164.64 184.78L143.85 184.78L143.85 170.92Z" id="b1"></path>
+                        
+                        <path d="M143.85 150.23L164.64 150.23L164.64 164.09L143.85 164.09L143.85 150.23Z" id="b2"></path>
+                        
+                        <path d="M143.85 129.54L164.64 129.54L164.64 143.4L143.85 143.4L143.85 129.54Z" id="b3"></path>
+                        
+                        <path d="M143.85 110.18L164.64 110.18L164.64 124.04L143.85 124.04L143.85 110.18Z" id="b4"></path>
+                        
+                        <path d="M143.85 90.13L164.64 90.13L164.64 103.99L143.85 103.99L143.85 90.13Z" id="b5"></path>
+                        
+                        <path d="M143.85 70.43L164.64 70.43L164.64 84.29L143.85 84.29L143.85 70.43Z" id="b6"></path>
+                        
+                        <path d="M143.85 50.72L164.64 50.72L164.64 64.58L143.85 64.58L143.85 50.72Z" id="b7"></path>
+                        
+                        </defs>
+                        
+                        <g><g><use xlink:href="#boostback" opacity="1" fill="#000000" fill-opacity="1"></use><g><use xlink:href="#boostback" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g>
+                        
+                        <g><use xlink:href="#b1" opacity="1" fill="#fffa0f" fill-opacity="1"></use><g><use xlink:href="#b1" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b2" opacity="1" fill="#fffa0f" fill-opacity="1"></use><g><use xlink:href="#b2" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b3" opacity="1" fill="#9cd301" fill-opacity="1"></use><g><use xlink:href="#b3" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b4" opacity="1" fill="#9cd301" fill-opacity="1"></use><g><use xlink:href="#b4" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b5" opacity="1" fill="#07c014" fill-opacity="1"></use><g><use xlink:href="#b5" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b6" opacity="1" fill="#07c014" fill-opacity="1"></use><g><use xlink:href="#b6" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b7" opacity="1" fill="#07c014" fill-opacity="1"></use><g><use xlink:href="#b7" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g></g></svg>
+    <script src="main1.js"></script>
+                </div>
+
+                <div class="divclass" id="second-svg">
+                    
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="compress-svg-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="222.51791614556618 37.81700401455291 39.403872752420455 165.82572614107872" width="35.4" height="161.83">
+
+    <defs><path d="M258.92 38.82L258.92 200.64L223.52 200.64L223.52 38.82L258.92 38.82Z" id="background1"></path>
+    
+    <path d="M230.82 172.9L251.62 172.9L251.62 186.76L230.82 186.76L230.82 172.9Z" id="bb1"></path>
+    
+    <path d="M230.82 152.21L251.62 152.21L251.62 166.07L230.82 166.07L230.82 152.21Z" id="bb2"></path>
+    
+    <path d="M230.82 131.51L251.62 131.51L251.62 145.37L230.82 145.37L230.82 131.51Z" id="bb3"></path>
+    
+    <path d="M230.82 112.16L251.62 112.16L251.62 126.02L230.82 126.02L230.82 112.16Z" id="bb4"></path>
+    
+    <path d="M230.82 92.11L251.62 92.11L251.62 105.97L230.82 105.97L230.82 92.11Z" id="bb5"></path>
+    
+    <path d="M230.82 72.4L251.62 72.4L251.62 86.26L230.82 86.26L230.82 72.4Z" id="bb6"></path>
+    
+    <path d="M230.82 52.7L251.62 52.7L251.62 66.56L230.82 66.56L230.82 52.7Z" id="bb7"></path>
+    
+    </defs>
+    
+    <g><g><use xlink:href="#background1" opacity="1" fill="#000000" fill-opacity="1"></use><g><use xlink:href="#background1" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bb1" opacity="1" fill="#fffa0f" fill-opacity="1"></use><g><use xlink:href="#bb1" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb2" opacity="1" fill="#fffa0f" fill-opacity="1"></use><g><use xlink:href="#bb2" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb3" opacity="1" fill="#e0c300" fill-opacity="1"></use><g><use xlink:href="#bb3" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb4" opacity="1" fill="#e0c300" fill-opacity="1"></use><g><use xlink:href="#bb4" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb5" opacity="1" fill="#fb920f" fill-opacity="1"></use><g><use xlink:href="#bb5" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb6" opacity="1" fill="#ff0000" fill-opacity="1"></use><g><use xlink:href="#bb6" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb7" opacity="1" fill="#ff0000" fill-opacity="1"></use><g><use xlink:href="#bb7" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g></g></svg>
+                <script src="main2.js"></script>
+                </div>
+                <div id="third-svg" class="divclass">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="compress-svg-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="154.3202417269615 34.85188773548313 39.403872752420455 165.82572614107872" width="35.4" height="161.83">
+
+    <defs>
+    
+    <path d="M190.72 35.85L190.72 197.68L155.32 197.68L155.32 35.85L190.72 35.85Z" id="background3"></path>
+    
+    <path d="M162.63 169.93L183.42 169.93L183.42 183.79L162.63 183.79L162.63 169.93Z" id="bbb1"></path>
+    
+    <path d="M162.63 149.24L183.42 149.24L183.42 163.1L162.63 163.1L162.63 149.24Z" id="bbb2"></path>
+    
+    <path d="M162.63 128.55L183.42 128.55L183.42 142.41L162.63 142.41L162.63 128.55Z" id="bbb3"></path>
+    
+    <path d="M162.63 109.19L183.42 109.19L183.42 123.05L162.63 123.05L162.63 109.19Z" id="bbb4"></path>
+    
+    <path d="M162.63 89.14L183.42 89.14L183.42 103L162.63 103L162.63 89.14Z" id="bbb5"></path>
+    
+    <path d="M162.63 69.44L183.42 69.44L183.42 83.3L162.63 83.3L162.63 69.44Z" id="bbb6"></path>
+    
+    <path d="M162.63 49.74L183.42 49.74L183.42 63.6L162.63 63.6L162.63 49.74Z" id="bbb7"></path>
+    
+    </defs>
+    
+    <g><g><use xlink:href="#background3" opacity="1" fill="#000000" fill-opacity="1"></use><g><use xlink:href="#background3" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bbb1" opacity="1" fill="#ff0fdd" fill-opacity="1"></use><g><use xlink:href="#bbb1" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb2" opacity="1" fill="#ff0fdd" fill-opacity="1"></use><g><use xlink:href="#bbb2" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb3" opacity="1" fill="#b100e0" fill-opacity="1"></use><g><use xlink:href="#bbb3" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb4" opacity="1" fill="#b100e0" fill-opacity="1"></use><g><use xlink:href="#bbb4" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb5" opacity="1" fill="#b472e4" fill-opacity="1"></use><g><use xlink:href="#bbb5" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb6" opacity="1" fill="#b472e4" fill-opacity="1"></use><g><use xlink:href="#bbb6" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb7" opacity="1" fill="#0300ff" fill-opacity="1"></use><g><use xlink:href="#bbb7" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g></g></svg>
+
+        <script src="main3.js"></script>
+                </div>
+            </div>
+            <div id="fuel" class="divclass">Fuel
+                <div id="fuel-grid">
+                    <div id="tank">TANK
+                        <div id="quantity">98.3 L</div></div>
+                    <div id="prev-lap">PREV.LAP
+                        <div id="quantity">0.00</div></div>
+                    <div id="rem">REM./ TO ADD
+                        <div id="quantity">+96.8</div></div>
+                    <div id="fuel-laps">FUEL LAPS
+                        <div id="quantity">29.6</div></div>
+                </div>
+            </div>
+            <div id="speed" class="divclass">Speed
+                <div id="speed-text">0</div></div>
+            
+            <div id="brake-bias" class="divclass">Brake Bias
+                <div id="bb-text">45.0</div></div>
+            <div id="abs" class="divclass">ABS
+                <div id="abs-text">0</div></div>
+            <div id="tc1" class="divclass">TC1
+                <div id="tc1-text">0</div></div>
+            <div id="tc2" class="divclass">TC2
+                <div id="tc2-text">0</div></div>
+            <div id="tps" class="divclass">TPS
+                <div id="tps-text">0</div></div>
+            <div id="map" class="divclass">Map
+                <div id="map-text">0</div></div>
+            
+        </div>
+
+    </div>
+    <div id="startscreen" class="fade-in">
+        <img id="screenstart" src="svgbmw.svg" onload="screenload()">
+    </div>
+    
+                <div id="rpmmeter" >
+                    <img src="rpmrev.png"  onmousedown="revincrease()" onmouseup="revdecrease()" onclick="changecolor()"> 
+                </div>
+                <div id="consolegrid">
+                    
+                    <div id="absswitch" >
+                        <img src="abs.png"  onclick="incabs()"> 
+                    </div>
+
+                    <div id="fanswitch" >
+                        <img src="aircon.png"> 
+                    </div>
+
+                    <div id="fuelswitch" >
+                        <img src="fuel.png"  > 
+                    </div>
+
+                    <div id="holdswitch" >
+                        <img src="holdspeed.png" > 
+                    </div>
+
+                    <div id="lighttoggle" >
+                        <img src="lightswitch.png" > 
+                    </div>
+
+                    <div id="mains" >
+                        <img src="mainswitch.png"  onclick="power()" onclick="startstop()"> 
+                    </div>
+
+                    <div id="rains" >
+                        <img src="rainlight.png"  > 
+                    </div>
+
+                    <div id="tract" >
+                        <img src="tractioncon.png"  onclick="tcsetting()"> 
+                    </div>
+
+                    <div id="tyres" >
+                        <img src="tyre.png" > 
+                    </div>
+
+
+                
+                </div>
+        <div id="mainwrapper">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <div class="wrapper">
+        <div id="chart"></div>
+        <script>
+
+        
+        function getspeed() {
+        
+        return speedinc;
+        }
+        
+        function getgear() {
+            return 10*gearc;
+            } 
+        function gettemperature() {
+            return document.getElementById("number78").innerHTML;
+            } 
+        function getrpm() {
+            return gearc;
+            } 
+
+        
+            Plotly.plot('chart', [{
+    y: [1,2,3].map(getspeed),
+    mode: 'lines+markers', 
+    marker: {color: 'gray', size: 6},
+    line: {width: 4}
+  }, {
+    y: [1,2].map(getgear),
+    mode: 'lines+markers',
+    marker: {color: 'yellow', size:6},
+    line: {width: 3}
+  }, {
+    y: [1,2,3].map(gettemperature),
+    mode: 'lines+markers',
+    marker: {color: 'red', size:6},
+    line: {width: 4}
+
+  }
+]);
+  
+  
+  var cnt = 0;
+  var interval = setInterval(function() {
+    Plotly.extendTraces('chart', {
+      y: [[getspeed()], [getgear()],[gettemperature()]]
+    }, [0, 1,2])
+  
+    cnt = cnt+1;
+    if(cnt === 1000) clearInterval(interval);
+  }, 800);
+///////////////////////////////////////////////////////////////////////////////
+  
+        </script>
+        </div>
+
+        
+        </div>
+
+        
+        
+
+
+    </body>
+</html>

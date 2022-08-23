@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Auto- ENQUIRY</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="advauto-styles.css">
+</head>
+<body>
+
+<p></p>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+
+</script>
+<script type="text/javascript">
+	function imshow(){
+
+		document.getElementById('carimg').style.display='block';
+	}
+</script>
+<h1>Advanced Auto Car Form :<button class="btn btn-primary" onclick="logout();" id="buttonstyling" style="float: right; margin-right: 60px;">Logout</button></h1>
+
+<!-- <input type="text" placeholder="name" id="nameField">
+<input type="text" placeholder="manufacturer" id="manufactureField">
+<input type="text" placeholder="number" id="numberField">
+<input type="text" placeholder="color" id="colorField">
+<input type="text" placeholder="licence" id="licenceField">
+<input type="text" placeholder="type" id="typeField">
+<button onclick="writeData()">Submit</button>
+<button onclick="show()">Show parameters</button>
+<button onclick="imshow()">display image</button>
+ -->
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3 col-sm-12 col" id="spacing">
+      <label for="validationTooltip01"><img src="https://img.icons8.com/officel/30/000000/person-male.png" id="person" />Name</label>
+      <input type="text" class="form-control" id="nameField" placeholder="First name" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3" id="spacing">
+      <label for="validationTooltip02"><img src="https://img.icons8.com/office/30/000000/car.png" id="caricon" />Manufacturer</label>
+      <input type="text" class="form-control" id="manufactureField" placeholder="Manufacturer" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3" id="spacing">
+      <label for="validationTooltipUsername"><img src="https://img.icons8.com/officel/30/000000/edit-user-male.png" id="registericon" />Registration Number</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+        </div>
+        <input type="text" class="form-control" id="numberField" placeholder="Registration Number" aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid registration number.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3 mb-3" id="spacing">
+      <label for="validationTooltip03"><img src="https://img.icons8.com/fluent/30/000000/border-color.png"/ id="colorplate">Color</label>
+      <input type="text" class="form-control" id="colorField" placeholder="Color" required>
+      <div class="invalid-tooltip">
+        Please provide a valid color.
+      </div>
+    </div>
+    <div class="col-md-6 mb-3" id="spacing">
+      <label for="validationTooltip04"><img src="https://img.icons8.com/ios/30/000000/licence-plate.png"/ id="lplate">Licence</label>
+      <input type="text" class="form-control" id="licenceField" placeholder="Licence" required>
+      <div class="invalid-tooltip">
+        Please provide a valid licence.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3" id="spacing">
+      <label for="validationTooltip05"><img src="https://img.icons8.com/officel/30/000000/wheel.png" id="typeicon" />Type</label>
+      <input type="text" class="form-control" id="typeField" placeholder="Type" required>
+      <div class="invalid-tooltip">
+        Please provide a valid type.
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 col-sm-12 col" id="spacing">
+      <label for="validationTooltip01"><img id="person" src="https://img.icons8.com/color/30/000000/email.png"/>Email</label>
+      <input type="email" class="form-control" id="emailField" placeholder="Enter your email" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    
+  </div>
+  
+  <button class="btn btn-primary" type="" onclick="show()" id="buttonstyling">Show Parameters</button>
+  <button class="btn btn-primary" type="" onclick="imshow()" id="buttonstyling">Display image</button>
+  <button class="btn btn-primary" type="submit" onclick="writeData()" onclick="submission()" id="buttonstyling">Submit form</button>
+  <button class="btn btn-primary" id="buttonstyling"><a href="Advanced Auto/index.html" style="color:white">Homepage</a></button>
+</form>
+
+
+
+
+<p id="data"></p>
+<img src="C:\Users\PARTH\Desktop\advanced auto\image.jpg" id="carimg" style="display:none;">
+
+<script type="text/javascript">
+  (function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

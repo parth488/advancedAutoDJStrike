@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="154.3202417269615 34.85188773548313 39.403872752420455 165.82572614107872" width="35.4" height="161.83">
+
+<defs>
+
+<path d="M190.72 35.85L190.72 197.68L155.32 197.68L155.32 35.85L190.72 35.85Z" id="background3"></path>
+
+<path d="M162.63 169.93L183.42 169.93L183.42 183.79L162.63 183.79L162.63 169.93Z" id="bbb1"></path>
+
+<path d="M162.63 149.24L183.42 149.24L183.42 163.1L162.63 163.1L162.63 149.24Z" id="bbb2"></path>
+
+<path d="M162.63 128.55L183.42 128.55L183.42 142.41L162.63 142.41L162.63 128.55Z" id="bbb3"></path>
+
+<path d="M162.63 109.19L183.42 109.19L183.42 123.05L162.63 123.05L162.63 109.19Z" id="bbb4"></path>
+
+<path d="M162.63 89.14L183.42 89.14L183.42 103L162.63 103L162.63 89.14Z" id="bbb5"></path>
+
+<path d="M162.63 69.44L183.42 69.44L183.42 83.3L162.63 83.3L162.63 69.44Z" id="bbb6"></path>
+
+<path d="M162.63 49.74L183.42 49.74L183.42 63.6L162.63 63.6L162.63 49.74Z" id="bbb7"></path>
+
+</defs>
+
+<g><g><use xlink:href="#background3" opacity="1" fill="#000000" fill-opacity="1"></use><g><use xlink:href="#background3" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bbb1" opacity="1" fill="#ff0fdd" fill-opacity="1"></use><g><use xlink:href="#bbb1" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb2" opacity="1" fill="#ff0fdd" fill-opacity="1"></use><g><use xlink:href="#bbb2" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb3" opacity="1" fill="#b100e0" fill-opacity="1"></use><g><use xlink:href="#bbb3" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb4" opacity="1" fill="#b100e0" fill-opacity="1"></use><g><use xlink:href="#bbb4" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb5" opacity="1" fill="#b472e4" fill-opacity="1"></use><g><use xlink:href="#bbb5" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb6" opacity="1" fill="#b472e4" fill-opacity="1"></use><g><use xlink:href="#bbb6" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bbb7" opacity="1" fill="#0300ff" fill-opacity="1"></use><g><use xlink:href="#bbb7" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g></g></svg>

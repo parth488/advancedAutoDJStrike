@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="222.51791614556618 37.81700401455291 39.403872752420455 165.82572614107872" width="35.4" height="161.83">
+
+<defs><path d="M258.92 38.82L258.92 200.64L223.52 200.64L223.52 38.82L258.92 38.82Z" id="background1"></path>
+
+<path d="M230.82 172.9L251.62 172.9L251.62 186.76L230.82 186.76L230.82 172.9Z" id="bb1"></path>
+
+<path d="M230.82 152.21L251.62 152.21L251.62 166.07L230.82 166.07L230.82 152.21Z" id="bb2">
+
+</path><path d="M230.82 131.51L251.62 131.51L251.62 145.37L230.82 145.37L230.82 131.51Z" id="bb3"></path>
+
+<path d="M230.82 112.16L251.62 112.16L251.62 126.02L230.82 126.02L230.82 112.16Z" id="bb4"></path>
+
+<path d="M230.82 92.11L251.62 92.11L251.62 105.97L230.82 105.97L230.82 92.11Z" id="bb5"></path>
+
+<path d="M230.82 72.4L251.62 72.4L251.62 86.26L230.82 86.26L230.82 72.4Z" id="bb6"></path>
+
+<path d="M230.82 52.7L251.62 52.7L251.62 66.56L230.82 66.56L230.82 52.7Z" id="bb7"></path>
+
+</defs>
+
+<g><g><use xlink:href="#background1" opacity="1" fill="#000000" fill-opacity="1"></use><g><use xlink:href="#background1" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g><g><use xlink:href="#bb1" opacity="1" fill="#fffa0f" fill-opacity="1"></use><g><use xlink:href="#bb1" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb2" opacity="1" fill="#fffa0f" fill-opacity="1"></use><g><use xlink:href="#bb2" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb3" opacity="1" fill="#e0c300" fill-opacity="1"></use><g><use xlink:href="#bb3" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb4" opacity="1" fill="#e0c300" fill-opacity="1"></use><g><use xlink:href="#bb4" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb5" opacity="1" fill="#fb920f" fill-opacity="1"></use><g><use xlink:href="#bb5" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb6" opacity="1" fill="#ff0000" fill-opacity="1"></use><g><use xlink:href="#bb6" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bb7" opacity="1" fill="#ff0000" fill-opacity="1"></use><g><use xlink:href="#bb7" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use></g></g></g></svg>
